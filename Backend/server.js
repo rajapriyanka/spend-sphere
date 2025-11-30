@@ -23,6 +23,15 @@ app.use('/api/auth', authRoutes);
 const transactionsRoutes = require('./routes/transactionsRoutes');
 app.use('/api/finance', transactionsRoutes);
 
+const dashboardRoutes = require('./routes/dashboardRoutes');
+app.use('/api/dashboard', dashboardRoutes);
+
+const reportsRoutes = require('./routes/reportsRoutes');
+app.use('/api/reports', reportsRoutes);
+
+const excelRoutes = require('./routes/excelRoutes');
+app.use('/api/excel', excelRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
