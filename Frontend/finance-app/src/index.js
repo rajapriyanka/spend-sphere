@@ -1,19 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css'; // Tailwind + global styles
-import './App.css';   // App-specific styles
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { AuthProvider } from "./context/AuthContext";
 
-// Create root for React 18
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </React.StrictMode>
 );
-
-// Optional: measure performance
-// Pass a function to log results, e.g., reportWebVitals(console.log)
-reportWebVitals();

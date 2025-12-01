@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { getDashboardData } from '../api/dashboard';
-import CategoryPie from '../components/charts/CategoryPie';
-import IncomeExpenseBar from '../components/charts/IncomeExpenseBar';
-import SavingsLine from '../components/charts/SavingsLine';
+import CategoryPie from '../components/Charts/CategoryPie';
+import IncomeExpenseBar from '../components/Charts/IncomeExpenseBar';
+import SavingsLine from '../components/Charts/SavingsLine';
 import ExcelViewer from '../components/ExcelViewer';
 
 const Dashboard = () => {
