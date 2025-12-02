@@ -1,0 +1,5 @@
+/* Basic styles. If you want Tailwind, initialize it separately. */
+html,body,#root { height:100%; margin:0; font-family: Inter, Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.container { padding: 1rem; max-width: 1000px; margin: 0 auto; }
+button { cursor: pointer; }
